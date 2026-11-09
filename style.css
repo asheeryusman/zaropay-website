@@ -1,0 +1,37 @@
+:root{--bg:#060B1A;--card:#0E1830;--line:#1E2B4D;--text:#FFFFFF;--muted:#93A0C4;--blue:#1D4ED8;--blue2:#2563EB;--cyan:#5BE3F5}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.6}
+a{color:var(--cyan);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+.top{position:sticky;top:0;background:rgba(6,11,26,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:5}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.nav nav a{color:var(--muted);margin-left:20px;font-size:15px}
+.brand{font-weight:800;font-size:28px;letter-spacing:-.5px;text-decoration:none!important}
+.brand.small{font-size:22px}
+.zaro{color:#fff}.pay{color:var(--cyan)}
+.hero{background:radial-gradient(900px 420px at 20% 0%,#1D4ED8 0%,rgba(29,78,216,.25) 45%,transparent 75%);padding:90px 0 70px}
+.eyebrow{color:var(--cyan);font-weight:600;letter-spacing:.5px;margin:0 0 12px}
+.hero h1{font-size:clamp(34px,6vw,58px);line-height:1.1;margin:0 0 18px;letter-spacing:-1px}
+.hero h1 span{color:var(--cyan)}
+.lead{color:#C9D3F0;font-size:18px;max-width:620px;margin:0 0 30px}
+.stores{display:flex;gap:12px;flex-wrap:wrap}
+.store{display:inline-flex;align-items:center;gap:8px;background:#fff;color:#060B1A;font-weight:700;padding:12px 18px;border-radius:12px}
+.store em{font-style:normal;font-weight:600;font-size:12px;background:var(--blue);color:#fff;padding:2px 8px;border-radius:20px}
+.feats{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;padding:40px 20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+.card .ic{font-size:30px}
+.card h3{margin:10px 0 6px;font-size:19px}
+.card p{margin:0;color:var(--muted)}
+.contact{text-align:center;padding:40px 20px 60px}
+.contact h2{margin:0 0 6px}
+.contact p{color:var(--muted)}
+.doc{padding:40px 20px 60px;max-width:780px}
+.doc h1{font-size:34px;margin:0 0 6px}
+.updated{color:var(--muted);margin:0 0 24px}
+.doc h2{font-size:19px;color:var(--cyan);margin:28px 0 6px}
+.doc p{color:#D6DDF3;margin:0 0 8px}
+.foot{border-top:1px solid var(--line);padding:30px 0 40px;color:var(--muted);font-size:14px}
+.foot nav{display:flex;flex-wrap:wrap;gap:8px 20px;margin:12px 0}
+.foot nav a{color:var(--muted)}
+@media (max-width:560px){.nav nav a{margin-left:12px;font-size:14px}.brand{font-size:24px}.hero{padding:60px 0 50px}}
